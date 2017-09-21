@@ -21,6 +21,9 @@ class BarChart extends Component {
 	}
 
 	renderBarChart(props) {
+		//Santiago Liñán: Tal vez sería mejor voltear la gráfica 90 grados y dejar el scroll horizontal.
+		//Se podría aprovechar mejor la distribución de la pantalla para ver más datos a la vez
+		
 		var t = d3.transition().duration(2000);
 
 		var height = props.datos.length * 10;
